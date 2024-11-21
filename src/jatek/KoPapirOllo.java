@@ -23,6 +23,7 @@ public class KoPapirOllo {
 //        String szoveg = sc.nextLine();
 //        System.out.println("Bekért szöveg: "); /*Bekért szöveg kiírása*/
 
+
         System.out.println("Üdvözöllek a Kő Papír Olló játékban!");
         System.out.println("Kérlek írj ide valamit a következők közűl: Kő-Papí-Olló");
         String[] lehetosegek = {"Kő", "Papír", "Olló"};
@@ -50,8 +51,29 @@ public class KoPapirOllo {
                 System.out.println("Gratulálok, Te Nyerél!");
             } else {
                 System.out.println("Sajnáljuk, Vesztettél...");
+                break;
             }
         }
+        sc.close();
+        
+        
+        System.out.println("Mit választasz?");
+        System.out.println("1: Kő");
+        System.out.println("2. Papír");
+        System.out.println("3. Olló");
+        System.out.println("Kérlek válassz: ");
+        int jatekos = sc.nextInt();
+        
+        Random rnd = new Random();
+        int szamitogep = rnd.nextInt(3)+1;
+        
+        String eredmeny = "Döntetlen";
+        
+        
+        
+        
+        
+        
 
     }
 
